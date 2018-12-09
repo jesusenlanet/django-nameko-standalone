@@ -12,7 +12,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://gitlab.com/projectsforfun/django-nameko-standalone",
-    packages=setuptools.find_packages(),
+    packages=['django_nameko_standalone'],
     install_requires=[
         "Django==2.1.4",
         "nameko==2.11.0"],
