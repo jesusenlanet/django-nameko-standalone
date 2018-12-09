@@ -1,0 +1,1 @@
+Use django standalone into your nameko microservices

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: django-nameko-standalone
+Version: 0.0.1
+Summary: Use django standalone into nameko services
+Home-page: UNKNOWN
+Author: Jesus Gutierrez Almazan
+Author-email: jesus.pedro.gutierrez.almazan@gmail.com
+License: UNKNOWN
+Description: Use django standalone into your nameko microservices
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django :: 2.1
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Distributed Computing
+Description-Content-Type: text/markdown
