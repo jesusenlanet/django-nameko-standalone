@@ -2,7 +2,7 @@ Metadata-Version: 2.1
 Name: django-nameko-standalone
 Version: 0.0.1
 Summary: Use django standalone into nameko services
-Home-page: UNKNOWN
+Home-page: https://gitlab.com/projectsforfun/django-nameko-standalone
 Author: Jesus Gutierrez Almazan
 Author-email: jesus.pedro.gutierrez.almazan@gmail.com
 License: UNKNOWN

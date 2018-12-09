@@ -1,1 +1,1 @@
-django_nameko_standalone
+

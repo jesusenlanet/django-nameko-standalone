@@ -2,3 +2,5 @@
 build/
 venv/
 .idea/
+dist/
+./django_nameko_standalone.egg-info/*
