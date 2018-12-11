@@ -9,7 +9,7 @@ setuptools.setup(
     version="0.0.1",
     author="Jesus Gutierrez Almazan",
     author_email="jesus.pedro.gutierrez.almazan@gmail.com",
-    description="Use django standalone into nameko services",
+    description="Use django into a nameko service",
     long_description=long_description,
     url="https://gitlab.com/projectsforfun/django-nameko-standalone/",
     packages=['django_nameko_standalone'],
