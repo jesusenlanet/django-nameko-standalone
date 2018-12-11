@@ -1,10 +1,10 @@
+import os
 from nameko.extensions import DependencyProvider
 
 
 class DjangoModels(DependencyProvider):
     def setup(self):
         """Initialize the dependency"""
-        import os
         import django
         if not os.environ.get('DJANGO_SETTINGS_MODULE'):
             os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings")
