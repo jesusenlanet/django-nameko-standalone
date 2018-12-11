@@ -13,11 +13,14 @@ setuptools.setup(
     long_description=long_description,
     url="https://gitlab.com/projectsforfun/django-nameko-standalone/",
     packages=['django_nameko_standalone'],
+    platforms=['Linux'],
     install_requires=[
         "Django==2.1.4",
         "nameko==2.11.0"
     ],
     classifiers=[
+        "Environment :: Web Environment",
+        "Intended Audience :: Developers",
         "Programming Language :: Python :: 3.6",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",

@@ -16,7 +16,7 @@ class DjangoModels(DependencyProvider):
         from django.conf import settings
 
         apps_config = map(apps.get_app_config, settings.DJANGO_NAMEKO_STANDALONE_APPS)
-        models = type('Models', (), {})
+        models = type('NonExistingClass_', (), {})
 
         for config in apps_config:
             for name, model in config.models.items():
