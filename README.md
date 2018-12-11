@@ -35,7 +35,7 @@ class NamekoService:
 
     @rpc
     def get_items(self, host):
-        cars = self.models.Item.objects.all()
+        items = self.models.Item.objects.all()
         ...
 
 ```
