@@ -1,4 +1,5 @@
 README.md
+README.txt
 setup.py
 django_nameko_standalone/__init__.py
 django_nameko_standalone.egg-info/PKG-INFO

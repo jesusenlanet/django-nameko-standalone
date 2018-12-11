@@ -11,7 +11,15 @@ class DjangoModels(DependencyProvider):
 
     def get_dependency(self, worker_ctx):
         """Get the dependency for the concrete service"""
-        from service_models import models
+        from django.apps import apps
+        from django.conf import settings
+
+        apps_config = map(apps.get_app_config, settings.DJANGO_NAMEKO_STANDALONE_APPS)
+        models = type('Models', (), {})
+
+        for config in apps_config:
+            for name, model in config.models.items():
+                setattr(models, name.capitalize(), model)
         return models
 
     def worker_teardown(self, worker_ctx):
@@ -21,5 +29,6 @@ class DjangoModels(DependencyProvider):
         """
         from django.db import connections
         connections.close_all()
+
 
 __all__ = ["DjangoModels"]

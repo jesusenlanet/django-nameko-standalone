@@ -1,0 +1,1 @@
+Use django standalone into nameko services
