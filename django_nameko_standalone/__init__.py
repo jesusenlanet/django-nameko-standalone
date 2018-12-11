@@ -6,7 +6,8 @@ class DjangoModels(DependencyProvider):
         """Initialize the dependency"""
         import os
         import django
-        os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings")
+        if not os.environ.get('DJANGO_SETTINGS_MODULE'):
+            os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings")
         django.setup()
 
     def get_dependency(self, worker_ctx):
