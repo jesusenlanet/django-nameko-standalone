@@ -22,6 +22,36 @@ Inject the dependency into the nameko service with the DjangoModels dependency.
 Supposing you injected the DjangoModels dependency into the `models` variable, you can use from your procedures like `self.models.MyModel.objects.all()`.
 
 
+## Configuration
+### Django nameko standalone configuration
+django-nameko-standalone need the next setting variable to work:
+```python
+DJANGO_NAMEKO_STANDALONE_APPS = ("<my_django_app>",)  # apps to load models from
+```
+This variable control the applications where to load models.
+
+
+### Django configuration
+To configure the django ORM, just configure it as normally for Django.
+
+The `INSTALLED_APPS` and `SECRET_KEY` settings needs to be defined to make Django work.
+
+```python
+# Minimum configuration required
+DJANGO_NAMEKO_STANDALONE_APPS = ("<my_django_app>",)
+INSTALLED_APPS = ("<mi_django_app>",)
+SECRET_KEY = '<your_secret_key>'
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': '<database>',
+        'USER': '<user>',
+        'HOST': '<host>',
+        'PORT': 5432,
+    }
+}
+```
+
 ## Example
 
 ```python
