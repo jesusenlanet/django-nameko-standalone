@@ -6,7 +6,7 @@ with open('README.txt') as file:
 
 setuptools.setup(
     name="django-nameko-standalone",
-    version="0.0.1",
+    version="1.0.0",
     author="Jesus Gutierrez Almazan",
     author_email="jesus.pedro.gutierrez.almazan@gmail.com",
     description="Use django into a nameko service",

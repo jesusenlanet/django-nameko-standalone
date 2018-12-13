@@ -2,3 +2,4 @@
 venv/
 .idea/
 dist/
+*.egg-info/
