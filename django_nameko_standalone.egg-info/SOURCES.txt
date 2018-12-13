@@ -1,9 +1,0 @@
-README.md
-README.txt
-setup.py
-django_nameko_standalone/__init__.py
-django_nameko_standalone.egg-info/PKG-INFO
-django_nameko_standalone.egg-info/SOURCES.txt
-django_nameko_standalone.egg-info/dependency_links.txt
-django_nameko_standalone.egg-info/requires.txt
-django_nameko_standalone.egg-info/top_level.txt
