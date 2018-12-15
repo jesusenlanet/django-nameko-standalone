@@ -1,4 +1,5 @@
 # DJANGO NAMEKO STANDALONE
+[![PyPI version](https://badge.fury.io/py/django-nameko-standalone.svg)](https://badge.fury.io/py/django-nameko-standalone)
 ## Use django into your nameko services
 ## Requirements
 Developed for Python3.6.
