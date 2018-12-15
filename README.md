@@ -63,6 +63,12 @@ DATABASES = {
 }
 ```
 
+## Testing
+To test the package run in a shell:
+```bash
+python3 setup.py test
+```
+
 ## Example
 ### Example scafolding
 * my_nameko_service

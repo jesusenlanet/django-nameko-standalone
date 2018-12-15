@@ -6,12 +6,12 @@ with open('README.txt') as file:
 
 setuptools.setup(
     name="django-nameko-standalone",
-    version="1.0.0",
+    version="1.0.1",
     author="Jesus Gutierrez Almazan",
     author_email="jesus.pedro.gutierrez.almazan@gmail.com",
     description="Use django into a nameko service",
     long_description=long_description,
-    url="https://gitlab.com/projectsforfun/django-nameko-standalone/",
+    url="https://github.com/jesusenlanet/django-nameko-standalone",
     packages=['django_nameko_standalone'],
     platforms=['Linux'],
     install_requires=[

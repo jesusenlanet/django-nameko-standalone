@@ -3,3 +3,4 @@ venv/
 .idea/
 dist/
 *.egg-info/
+*.eggs/
