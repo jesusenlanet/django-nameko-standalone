@@ -6,7 +6,7 @@ Developed for Python3.6.
 
 Have dependecies of:
 
-* Django==2.1.4
+* Django>=1.11,<2.2
 * nameko==2.11.0
 
 ## Installation
@@ -65,10 +65,28 @@ DATABASES = {
 ```
 
 ## Testing
-To test the package run in a shell:
+### Run tests with setup.py
+You need to have installed setuptools
+```bash
+pip install setuptools
+```
+
+To test the package run in a shell, it will run the tests using pytest with the interpreter used against the Django version available to install (>=1.11,<2.2).
 ```bash
 python3 setup.py test
 ```
+
+### Run tests with tox
+You need to have install tox
+```bash
+pip install tox
+```
+
+Once satisfied, simply run the tox command
+```bash
+tox
+```
+It will run a bunch of tests using python3.6 and multiple django versions
 
 ## Example
 ### Example scafolding

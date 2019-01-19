@@ -3,7 +3,7 @@ python:
   - "3.6"
 # command to install dependencies
 install:
-  - pip install -r requirements.txt
+  - pip install -r requirements/travis_requirements.txt
 # command to run tests
 script:
-  - python3 setup.py test
+  - tox
