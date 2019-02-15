@@ -13,7 +13,17 @@ class GetDependencyLoadingTestModelTestCase(TestCase):
         self.django_models = DjangoModels()
         self.django_models.setup()
 
-    def test_get_dependency_loading_test_model(self):
+    def test_get_dependency_loading_test_model_capitalized_fail(self):
         models = self.django_models.get_dependency(None)
-        self.assertTrue(models.Mytestmodel)
-        self.assertIsInstance(models.Mytestmodel, ModelBase)
+        with self.assertRaises(AttributeError):
+            models.Mytestmodel
+
+    def test_get_dependency_loading_test_model_camel_case(self):
+        models = self.django_models.get_dependency(None)
+        self.assertTrue(models.MyTestModel)
+        self.assertIsInstance(models.MyTestModel, ModelBase)
+
+    def test_get_dependency_loading_test_model_uppercase_fail(self):
+        models = self.django_models.get_dependency(None)
+        with self.assertRaises(AttributeError):
+            models.MYTESTMODEL

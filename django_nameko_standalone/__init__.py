@@ -21,8 +21,8 @@ class DjangoModels(DependencyProvider):
         models = type('NonExistingClass_', (), {})
 
         for config in apps_config:
-            for name, model in config.models.items():
-                setattr(models, name.capitalize(), model)
+            for model in config.get_models():
+                setattr(models, model.__name__, model)
         return models
 
     def worker_teardown(self, worker_ctx):
