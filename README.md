@@ -6,8 +6,8 @@ Developed for Python3.6.
 
 Have dependecies of:
 
-* Django>=1.11,<2.2
-* nameko==2.11.0
+* Django>=1.11,<=2.2.2
+* nameko==2.12.0
 
 ## Installation
 `pip install django-nameko-standalone`
@@ -71,7 +71,7 @@ You need to have installed setuptools
 pip install setuptools
 ```
 
-To test the package run in a shell, it will run the tests using pytest with the interpreter used against the Django version available to install (>=1.11,<2.2).
+To test the package run in a shell, it will run the tests using pytest with the interpreter used against the Django version available to install (>=1.11,<=2.2.2).
 ```bash
 python3 setup.py test
 ```
