@@ -5,7 +5,7 @@ with open('README.txt') as file:
 
 setuptools.setup(
     name="django-nameko-standalone",
-    version="1.3.2",
+    version="2.0.0",
     author="Jesus Gutierrez Almazan",
     author_email="jesus.pedro.gutierrez.almazan@gmail.com",
     description="Use django into a nameko service",
@@ -14,7 +14,7 @@ setuptools.setup(
     packages=['django_nameko_standalone'],
     platforms=['Linux'],
     install_requires=[
-        "Django>=1.11.27,<3.0",
+        "Django==3.0.7",
         "nameko==2.12.0"
     ],
     test_suite='pytest',
@@ -29,8 +29,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Development Status :: 5 - Production/Stable",
-        "Framework :: Django :: 1.11",
-        "Framework :: Django :: 2.2",
+        "Framework :: Django :: 3.0",
         "Topic :: Software Development :: Libraries",
     ],
 )
