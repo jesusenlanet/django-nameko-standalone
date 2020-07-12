@@ -6,7 +6,7 @@ Developed for Python3.6.
 
 Have dependecies of:
 
-* Django>=1.11.27,<3.0
+* Django==3.0.7
 * nameko==2.12.0
 
 ## Installation

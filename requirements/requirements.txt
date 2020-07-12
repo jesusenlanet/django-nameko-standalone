@@ -1,2 +1,2 @@
 -r common.txt
-Django>=1.11.27,<3.0
+Django==3.0.7
