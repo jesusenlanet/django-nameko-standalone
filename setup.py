@@ -14,7 +14,7 @@ setuptools.setup(
     packages=['django_nameko_standalone'],
     platforms=['Linux'],
     install_requires=[
-        "Django==3.0.7",
+        "Django==3.1.6",
         "nameko==2.12.0"
     ],
     test_suite='pytest',
