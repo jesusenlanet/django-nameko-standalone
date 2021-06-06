@@ -1,3 +1,6 @@
+
+# ⛔️ Discontinued ⛔️
+
 # DJANGO NAMEKO STANDALONE
 [![PyPI version](https://badge.fury.io/py/django-nameko-standalone.svg)](https://badge.fury.io/py/django-nameko-standalone) [![Build Status](https://travis-ci.com/jesusenlanet/django-nameko-standalone.svg?branch=master)](https://travis-ci.com/jesusenlanet/django-nameko-standalone)
 ## Use django into your nameko services
